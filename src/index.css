@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply font-publicSans;
+        @apply bg-background;
+    }
+}
+
+@layer utilities {
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar {
+        background: #fff;
+        width: 9px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #7d7d7d;
+        border-radius: 5px;
+    }
+
+    .font-raleway {
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .hide-number-arrows {
+        -webkit-appearance: none;
+        -moz-appearance: textfield;
+    }
+
+    .hide-number-arrows::-webkit-inner-spin-button,
+    .hide-number-arrows::-webkit-outer-spin-button {
+        display: none;
+        -webkit-appearance: none;
+    }
+
+    .main-auth-gradient {
+        background: linear-gradient(133deg, #080f18, #2c248d 99%);
+    }
+}
