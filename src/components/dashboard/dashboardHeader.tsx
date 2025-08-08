@@ -1,6 +1,6 @@
 import {FiSearch} from "react-icons/fi";
 import {LuCalendarDays} from "react-icons/lu";
-import {DateRange} from "react-date-range";
+import {DateRangePicker} from "react-date-range";
 import {useState} from "react";
 
 const DashboardHeader = () => {
@@ -63,7 +63,7 @@ const DashboardHeader = () => {
                     />
                     {showPicker && (
                         <div className="absolute top-0 right-0 mt-2 z-10">
-                            <DateRange
+                            <DateRangePicker
                                 className="border shadow-md"
                                 ranges={[dateRange]}
                                 onChange={handleSelect}
