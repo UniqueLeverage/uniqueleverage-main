@@ -11,6 +11,6 @@
   "jsx": "react-jsx",
   "compilerOptions": {
     "jsx": "react-jsx",
-    "types": ["node"]
+    "types": ["node", "react", "react-dom"]
   }
 }
