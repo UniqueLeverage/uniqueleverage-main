@@ -7,5 +7,10 @@
     {
       "path": "./tsconfig.node.json"
     }
-  ]
+  ],
+  "jsx": "react-jsx",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "types": ["node"]
+  }
 }
